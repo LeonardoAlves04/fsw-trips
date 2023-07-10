@@ -1,5 +1,5 @@
 import React from "react";
-import { prisma } from "@/app/lib/prisma";
+import { prisma } from "@/lib/prisma";
 
 const getTrips = async () => {
   const trips = await prisma.trip.findMany({});
