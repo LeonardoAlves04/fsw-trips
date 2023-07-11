@@ -1,4 +1,4 @@
-Projeto de um website de uma agêcia de viagens(buscar destinos, olhar preçoes, fazer reservas, etc..). Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
+## Projeto de um website de uma agêcia de viagens(buscar destinos, olhar preçoes, fazer reservas, etc..). Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
 
 ## Getting Started
 
