@@ -1,6 +1,13 @@
 import { Trip } from "@prisma/client";
 import React from "react";
 import TripItem from "@/components/TripItem";
+import { prisma } from "@/lib/prisma";
+
+async function getTrips() {
+  const trips = await prisma.trip.findMany({});
+
+  return trips;
+}
 
 const RecommendedTrips = async () => {
   const data = await fetch("http://localhost:3000/hello").then((res) =>
