@@ -15,7 +15,7 @@ const TripHeader = ({ trip }: TripHeaderProps) => {
           src={trip.coverImage}
           fill
           style={{ objectFit: "cover" }}
-          alt="trip.name"
+          alt={trip.name}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

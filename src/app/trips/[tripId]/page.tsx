@@ -8,7 +8,7 @@ import TripDescription from "./components/TripDescription";
 const getTripDetails = async (tripId: string) => {
   const trip = await prisma.trip.findUnique({
     where: {
-      id: "tripId",
+      id: tripId,
     },
   });
 
