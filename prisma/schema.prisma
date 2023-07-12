@@ -11,7 +11,7 @@ datasource db {
 }
 
 model Trip {
-  id           String            @unique @id @default(uuid())
+  id           String            @id @default(uuid())
   name         String
   location     String
   startDate    DateTime
