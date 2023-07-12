@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Projeto de um website de uma agêcia de viagens(buscar destinos, olhar preçoes, fazer reservas, etc..) Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
 
 ## Getting Started
 
