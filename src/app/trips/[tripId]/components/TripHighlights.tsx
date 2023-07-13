@@ -17,7 +17,7 @@ const TripsHighlights = ({ highlights }: TripHighlightsProps) => {
               src="/check-icon.png"
               width={15}
               height={15}
-              alt={highlight}
+              alt={"highlight"}
             />
             <p className="text-grayPrimary text-xs">{highlight}</p>
           </div>
