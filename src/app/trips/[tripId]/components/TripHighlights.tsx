@@ -18,6 +18,10 @@ const TripsHighlights = ({ highlights }: TripHighlightsProps) => {
               width={15}
               height={15}
               alt={"highlight"}
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
             />
             <p className="text-grayPrimary text-xs">{highlight}</p>
           </div>
