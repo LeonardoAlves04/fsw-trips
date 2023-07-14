@@ -12,7 +12,7 @@ const QuickSearch = () => {
         <div className="w-full h-[1px] bg-grayLighter"></div>
       </div>
 
-      <div className="flex w-full justify-between mt-5">
+      <div className="flex w-full justify-between mt-8">
         <div className="flex flex-col items-center gap-1">
           <Image width={35} height={35} src="/hotel-icon.png" alt="hotel" />
           <p className="text-sm text-grayPrimary"> Hotel</p>

@@ -13,7 +13,7 @@ const TripSearch = () => {
         Encontre sua próxima <span className="text-primary">viagem!</span>
       </h1>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-4">
         <Input placeholder="Onde você quer ir?" />
 
         <div className="flex gap-4 mt-5">
@@ -25,7 +25,7 @@ const TripSearch = () => {
           <CurrencyInput placeholder="Orçamento" />
         </div>
 
-        <Button>Buscar</Button>
+        <Button className="mt-6">Buscar</Button>
       </div>
     </div>
   );
