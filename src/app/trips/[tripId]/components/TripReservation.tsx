@@ -13,7 +13,8 @@ interface TripReservationProps {
 
 interface TripReservationForm {
   guests: number;
-  startDate: string;
+  startDate: Date | null;
+  endDate: Date | null;
 }
 
 const TripReservation = ({ trip }: TripReservationProps) => {
@@ -42,17 +43,35 @@ const TripReservation = ({ trip }: TripReservationProps) => {
           control={control}
           render={({ field }) => (
             <DatePicker
+              error={!!errors?.startDate}
+              errorMessage={errors?.startDate?.message}
               placeholderText="Data de Início"
-              onChange={() => {}}
+              onChange={field.onChange}
+              selected={field.value}
               className="w-full"
             />
           )}
         />
 
-        <DatePicker
-          placeholderText="Data Final"
-          onChange={() => {}}
-          className="w-full"
+        <Controller
+          name="endDate"
+          rules={{
+            required: {
+              value: true,
+              message: "Data final é obrigatória.",
+            },
+          }}
+          control={control}
+          render={({ field }) => (
+            <DatePicker
+              error={!!errors?.endDate}
+              errorMessage={errors?.endDate?.message}
+              placeholderText="Data Final"
+              onChange={field.onChange}
+              selected={field.value}
+              className="w-full"
+            />
+          )}
         />
       </div>
       <Input
