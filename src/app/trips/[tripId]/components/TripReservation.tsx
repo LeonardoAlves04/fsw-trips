@@ -36,6 +36,7 @@ const TripReservation = ({
     formState: { errors },
     control,
     watch,
+    setError,
   } = useForm<TripReservationForm>();
 
   const onSubmit = async (data: any) => {
@@ -52,7 +53,31 @@ const TripReservation = ({
 
     const res = await response.json();
 
-    console.log({ res });
+    if (res?.error?.code === "TRIP_ALREADY_RESERVED") {
+      setError("startDate", {
+        type: "manual",
+        message: "Essa data já foi reservada.",
+      });
+
+      setError("endDate", {
+        type: "manual",
+        message: "Essa data já foi reservada.",
+      });
+    }
+
+    if (res?.error?.code === "INVALID_START_DATE") {
+      setError("startDate", {
+        type: "manual",
+        message: "Data inválida",
+      });
+    }
+
+    if (res?.error?.code === "INVALID_END_DATE") {
+      setError("endDate", {
+        type: "manual",
+        message: "Data inválida",
+      });
+    }
   };
 
   const startDate = watch("startDate");
