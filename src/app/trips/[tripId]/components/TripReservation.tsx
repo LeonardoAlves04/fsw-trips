@@ -40,7 +40,7 @@ const TripReservation = ({
   } = useForm<TripReservationForm>();
 
   const onSubmit = async (data: any) => {
-    const response = await fetch("http://localhost:3000/api/trips/check", {
+    const response = await fetch("/api/trips/check", {
       method: "POST",
       body: Buffer.from(
         JSON.stringify({
@@ -59,21 +59,21 @@ const TripReservation = ({
         message: "Essa data já foi reservada.",
       });
 
-      setError("endDate", {
+      return setError("endDate", {
         type: "manual",
         message: "Essa data já foi reservada.",
       });
     }
 
     if (res?.error?.code === "INVALID_START_DATE") {
-      setError("startDate", {
+      return setError("startDate", {
         type: "manual",
         message: "Data inválida",
       });
     }
 
     if (res?.error?.code === "INVALID_END_DATE") {
-      setError("endDate", {
+      return setError("endDate", {
         type: "manual",
         message: "Data inválida",
       });
@@ -137,11 +137,16 @@ const TripReservation = ({
             value: true,
             message: "Você precisa informar a quantidade de hóspedes.",
           },
+          max: {
+            value: maxGuests,
+            message: `Número de hóspedes não pode ser maior que ${maxGuests}.`,
+          },
         })}
         placeholder={`Número de hóspedes(max:${maxGuests})`}
         className="mt-4"
         error={!!errors?.guests}
         errorMessage={errors?.guests?.message}
+        type="number"
       />
 
       <div className="flex justify-between mt-3">
