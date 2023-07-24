@@ -66,7 +66,7 @@ const TripReservation = ({
           rules={{
             required: {
               value: true,
-              message: "Data inicial é obrigatória.",
+              message: "A data inicial é obrigatória.",
             },
           }}
           control={control}
@@ -88,7 +88,7 @@ const TripReservation = ({
           rules={{
             required: {
               value: true,
-              message: "Data final é obrigatória.",
+              message: "A data final é obrigatória.",
             },
           }}
           control={control}
