@@ -7,8 +7,10 @@ import React from "react";
 import Button from "@/components/Button";
 import { Controller, useForm } from "react-hook-form";
 import differenceInDays from "date-fns/differenceInDays";
+import { POST } from "@/app/api/trips/check/route";
 
 interface TripReservationProps {
+  tripId: string;
   tripStartDate: Date;
   tripEndDate: Date;
   maxGuests: number;
@@ -22,6 +24,7 @@ interface TripReservationForm {
 }
 
 const TripReservation = ({
+  tripId,
   maxGuests,
   tripStartDate,
   tripEndDate,
@@ -36,7 +39,20 @@ const TripReservation = ({
   } = useForm<TripReservationForm>();
 
   const onSubmit = async (data: any) => {
-    const response = await fetch("http://localhost:3000/api/trips/check");
+    const response = await fetch("http://localhost:3000/api/trips/check", {
+      method: "POST",
+      body: Buffer.from(
+        JSON.stringify({
+          startDate: data.startDate,
+          endDate: data.endDate,
+          tripId,
+        })
+      ),
+    });
+
+    const res = await response.json();
+
+    console.log({ res });
   };
 
   const startDate = watch("startDate");
