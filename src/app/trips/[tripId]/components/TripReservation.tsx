@@ -35,8 +35,8 @@ const TripReservation = ({
     watch,
   } = useForm<TripReservationForm>();
 
-  const onSubmit = (data: any) => {
-    console.log({ data });
+  const onSubmit = async (data: any) => {
+    const response = await fetch("http://localhost:3000/api/trips/check");
   };
 
   const startDate = watch("startDate");
