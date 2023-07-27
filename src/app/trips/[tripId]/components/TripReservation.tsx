@@ -149,7 +149,7 @@ const TripReservation = ({
             message: `Número de hóspedes não pode ser maior que ${maxGuests}.`,
           },
         })}
-        placeholder={`Número de hóspedes(max:${maxGuests})`}
+        placeholder={`Número de hóspedes(max: ${maxGuests})`}
         className="mt-4"
         error={!!errors?.guests}
         errorMessage={errors?.guests?.message}

@@ -1,15 +1,16 @@
 "use client";
 
+import { Trip } from "@prisma/client";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import ReactCountryFlag from "react-country-flag";
 
 const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
-  const [trip, setTrip] = useState();
+  const [trip, setTrip] = useState<Trip | null>();
   const [totalPrice, setTotalPrice] = useState<number>(0);
-
   const searchParams = useSearchParams();
+
   useEffect(() => {
     const fetchTrip = async () => {
       const response = await fetch(`http://localhost:3000/api/trips/check`, {
@@ -68,7 +69,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
 
         <div className="flex justify-between">
           <p className="font-medium text-primaryDarker">Valor:</p>
-          <p>R${totalPrice}</p>
+          <p>R$ {totalPrice}</p>
         </div>
       </div>
     </div>
