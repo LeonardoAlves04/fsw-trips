@@ -40,7 +40,7 @@ const TripReservation = ({
 
   const router = useRouter();
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: TripReservationForm) => {
     const response = await fetch("/api/trips/check", {
       method: "POST",
       body: Buffer.from(
@@ -81,7 +81,7 @@ const TripReservation = ({
     }
 
     router.push(
-      `/trips/${tripId}/confirmation?startDate=${data.startDate?.toISOString()}&endDate${data.endDate?.toISOString()}&guests=${
+      `/trips/${tripId}/confirmation?startDate=${data.startDate?.toISOString()}&endDate=${data.endDate?.toISOString()}&guests=${
         data.guests
       }`
     );
@@ -160,7 +160,7 @@ const TripReservation = ({
         <p className="font-medium text-sm text-primaryDarker">Total:</p>
         <p className="font-medium text-sm text-primaryDarker">
           {startDate && endDate
-            ? `R$${differenceInDays(endDate, startDate) * pricePerDay}` ?? 1
+            ? `R$ ${differenceInDays(endDate, startDate) * pricePerDay}` ?? 1
             : "R$0"}
         </p>
       </div>

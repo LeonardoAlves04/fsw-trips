@@ -67,9 +67,9 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
           Preço total da viagem
         </h3>
 
-        <div className="flex justify-between">
-          <p className="font-medium text-primaryDarker">Valor:</p>
-          <p>R$ {totalPrice}</p>
+        <div className="flex justify-between mt-1">
+          <p className="text-primaryDarker">Valor:</p>
+          <p className="font-medium">R$ {totalPrice}</p>
         </div>
       </div>
     </div>
