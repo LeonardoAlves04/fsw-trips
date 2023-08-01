@@ -18,7 +18,7 @@ const Header = () => {
     signOut();
   };
 
-  const handleMenuClick = () => setMenuIsOpen(true);
+  const handleMenuClick = () => setMenuIsOpen(!menuIsOpen);
 
   return (
     <div className="container mx-auto p-5 py-0 h-[93px] flex justify-between items-center">
@@ -53,9 +53,15 @@ const Header = () => {
           />
 
           {menuIsOpen && (
-            <div className=" z-50 absolute top-14 left-0 w-full h-full bg-white rounded-lg shadow-md flex flex-col justify-center items-center">
+            <div className=" z-50 absolute top-14 left-0 w-full h-[100px] bg-white rounded-lg shadow-md flex flex-col justify-center items-center">
+              <Link href={"my-trips"}>
+                <button className="text-primary pb-2 border-b border-grayPrimary border-solid text-xs font-semibold">
+                  Minhas viagens
+                </button>
+              </Link>
+
               <button
-                className="text-primary text-xs font-semibold"
+                className="text-primary pt-2 text-xs font-semibold"
                 onClick={handleLogoutClick}
               >
                 Logout
