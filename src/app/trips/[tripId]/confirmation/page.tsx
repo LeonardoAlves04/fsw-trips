@@ -50,7 +50,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
 
   if (!trip) return null;
 
-  const handleByClick = async () => {
+  const handleBuyClick = async () => {
     const res = await fetch("http://localhost:3000/api/trips/reservation", {
       method: "POST",
       body: Buffer.from(
@@ -133,7 +133,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
 
         <h3 className="font-semibold mt-5">Hóspedes</h3>
         <p> {guests} hóspedes</p>
-        <Button className="mt-5" onClick={handleByClick}>
+        <Button className="mt-5" onClick={handleBuyClick}>
           Finalizar compra
         </Button>
       </div>
