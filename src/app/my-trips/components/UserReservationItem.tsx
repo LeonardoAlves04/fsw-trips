@@ -15,6 +15,8 @@ interface UserReservationItemProps {
 const UserReservationItem = ({ reservation }: UserReservationItemProps) => {
   const { trip } = reservation;
 
+const handleDeleteClick = async =
+
   return (
     <div className="">
       {/* CARD  */}
