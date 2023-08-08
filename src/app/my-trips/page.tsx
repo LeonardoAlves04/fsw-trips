@@ -31,11 +31,8 @@ const MyTrips = () => {
     if (status === "unauthenticated") {
       return router.push("/");
     }
-
     fetchReservations();
   }, [status]);
-
-  console.log({ reservations });
 
   return (
     <div className="container mx-auto p-5">
