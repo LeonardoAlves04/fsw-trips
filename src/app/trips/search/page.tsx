@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 
 const Trips = () => {
-  const [trips, setTrips] = React.useState<Trip[]>();
+  const [trips, setTrips] = React.useState<Trip[]>([]);
 
   const searchParams = useSearchParams();
 
@@ -33,8 +33,8 @@ const Trips = () => {
       <h1 className="text-primaryDarker font-semibold text-xl">
         Viagens encontradas
       </h1>
-      <h2 className="text=grayPrimary font-medium mb-5 mt-2">
-        {trips?.length > 0
+      <h2 className="text=grayPrimary font-medium mb-5 ">
+        {trips.length > 0
           ? "Listamos as melhores viagens para você!"
           : "Não encontramos essa viagem :("}
       </h2>
