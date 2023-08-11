@@ -39,6 +39,8 @@ const UserReservationItem = ({
     });
 
     fetchReservations();
+
+    return router.push("/");
   };
 
   return (
