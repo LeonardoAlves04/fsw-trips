@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 });
 
 export async function POST(request: Request) {
-  const userSession = await getServerSession();
+  const userSession = await getServerSession(authOptions);
 
   const req = await request.json();
 
@@ -31,6 +31,7 @@ export async function POST(request: Request) {
       endDate,
       guests,
       userId: (userSession?.user as any)?.id,
+      totalPrice,
     },
     line_items: [
       {

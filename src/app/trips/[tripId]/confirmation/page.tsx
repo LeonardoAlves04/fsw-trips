@@ -20,8 +20,6 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
   const router = useRouter();
   const { status, data } = useSession();
 
-  console.log(data);
-
   useEffect(() => {
     const fetchTrip = async () => {
       const response = await fetch(`http://localhost:3000/api/trips/check`, {
@@ -67,8 +65,6 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
         })
       ),
     });
-
-    console.log({ res });
 
     if (!res.ok) {
       return toast.error("Ocorreu um erro ao realizar a reserva!", {
