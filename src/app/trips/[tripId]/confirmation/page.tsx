@@ -5,13 +5,13 @@ import { useSearchParams } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import { loadStripe } from "@stripe/stripe-js";
 import Image from "next/image";
 import ReactCountryFlag from "react-country-flag";
 import format from "date-fns/format";
 import ptBR from "date-fns/locale/pt-BR";
 import Button from "@/components/Button";
-import { toast } from "react-toastify";
-import { loadStripe } from "@stripe/stripe-js";
 
 const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
   const [trip, setTrip] = useState<Trip | null>();
