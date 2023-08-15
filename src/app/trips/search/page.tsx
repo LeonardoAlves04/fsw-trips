@@ -29,7 +29,7 @@ const Trips = () => {
   }, []);
 
   return (
-    <div className="container mx-auto flex flex-col items-center p-5 lg:items-center">
+    <div className="container mx-auto flex flex-col items-center p-5 lg:items-center lg:pt-10">
       <h1 className="text-primaryDarker font-semibold text-xl text-center lg:w-full lg:text-[2.5rem]">
         Viagens encontradas
       </h1>

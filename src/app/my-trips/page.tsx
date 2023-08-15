@@ -40,7 +40,7 @@ const MyTrips = () => {
 
   return (
     <div className="container mx-auto p-5">
-      <h1 className="font-semibold text-primaryDarker text-xl lg:mb-5">
+      <h1 className="font-semibold text-primaryDarker text-xl lg:mb-5 lg:text-center">
         Minhas Viagens
       </h1>
       {reservations.length > 0 ? (
@@ -54,13 +54,15 @@ const MyTrips = () => {
           ))}
         </div>
       ) : (
-        <div className="flex flex-col lg:max-w-[500px]">
-          <p className="mt-2 font-medium text-primaryDarker">
+        <div className="flex flex-col  lg:justify-center lg:items-center">
+          <p className="mt-2 font-medium text-primaryDarker lg:text-center">
             Você ainda não tem nenhuma reserva! =(
           </p>
 
           <Link href="/">
-            <Button className="w-full mt-2 lg:mt-8  ">Fazer reserva</Button>
+            <Button className="w-full mt-2 lg:mt-8 lg:w-[250px]">
+              Fazer reserva
+            </Button>
           </Link>
         </div>
       )}
