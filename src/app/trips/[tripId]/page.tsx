@@ -23,7 +23,7 @@ const TripDetails = async ({ params }: { params: { tripId: string } }) => {
   if (!trip) return null;
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto lg:px-40">
       <TripHeader trip={trip} />
       <TripReservation
         tripId={trip.id}
