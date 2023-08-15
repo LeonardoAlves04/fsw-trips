@@ -60,7 +60,7 @@ const MyTrips = () => {
           </p>
 
           <Link href="/">
-            <Button className="w-full mt-2 lg:mt-5">Fazer reserva</Button>
+            <Button className="w-full mt-2 lg:mt-8  ">Fazer reserva</Button>
           </Link>
         </div>
       )}
