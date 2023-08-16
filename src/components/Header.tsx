@@ -24,7 +24,7 @@ const Header = () => {
     <div className="container mx-auto p-5 py-0 h-[93px] flex justify-between items-center lg:border-b lg:border-grayLighter">
       <Link href="/">
         <div className="relative h-[40px] w-[150px]">
-          <Image src="/logo.png" alt="full stack week" fill />
+          <Image src="/logo_.png" alt="full stack week" fill />
         </div>
       </Link>
 
