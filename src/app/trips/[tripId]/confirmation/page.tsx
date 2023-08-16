@@ -16,9 +16,9 @@ import Button from "@/components/Button";
 const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
   const [trip, setTrip] = useState<Trip | null>();
   const [totalPrice, setTotalPrice] = useState<number>(0);
-  const searchParams = useSearchParams();
   const router = useRouter();
   const { status, data } = useSession();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const fetchTrip = async () => {

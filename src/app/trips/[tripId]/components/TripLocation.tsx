@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface TripLocationProps {
@@ -28,7 +29,7 @@ const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
 
       <div className="relative h-[480px] w-full hidden lg:block">
         <Image
-          src="/map-desktop.png"
+          src="/map_desktop.png"
           alt={location}
           fill
           style={{
@@ -45,9 +46,11 @@ const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
         {locationDescription}
       </p>
 
-      <Button variant="outlined" className="w-full mt-5">
-        Ver no Google Maps
-      </Button>
+      <Link href={`https://google.com.br/maps/place/${location}`}>
+        <Button variant="outlined" className="w-full mt-5">
+          Ver no Google Maps
+        </Button>
+      </Link>
     </div>
   );
 };
