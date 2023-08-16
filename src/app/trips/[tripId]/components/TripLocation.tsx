@@ -14,13 +14,15 @@ const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
         Localização
       </h2>
 
-      <div className="relative h-[280px] w-full lg:hidden ">
+      <div className="relative h-[280px] w-full lg:hidden">
         <Image
           src="/map-mobile.png"
           alt={location}
           fill
-          style={{ objectFit: "cover" }}
-          className="rounded-lg shadow-lg"
+          style={{
+            objectFit: "cover",
+          }}
+          className="rounded-lg shadow-md"
         />
       </div>
 
@@ -29,8 +31,10 @@ const TripLocation = ({ location, locationDescription }: TripLocationProps) => {
           src="/map-desktop.png"
           alt={location}
           fill
-          style={{ objectFit: "cover" }}
-          className="rounded-lg shadow-lg"
+          style={{
+            objectFit: "cover",
+          }}
+          className="rounded-lg shadow-md"
         />
       </div>
 
