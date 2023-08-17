@@ -33,7 +33,7 @@ const TripSearch = () => {
   };
 
   return (
-    <div className="container mx-auto p-5 bg-search-background bg-center lg:py-28 h-[480px] ">
+    <div className="container mx-auto p-5 bg-search-background bg-center lg:py-28 lg:h-[480px] h-[280px]">
       <h1 className="font-semibold text-2xl text-primarDark text-center lg:text-[2.5rem]">
         Encontre sua próxima <span className="text-primary">viagem!</span>
       </h1>
