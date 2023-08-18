@@ -1,5 +1,7 @@
 ## Projeto de um website de uma agêcia de viagens(buscar destinos, olhar preçoes, fazer reservas, etc..) Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
 
+Esse é um projeto de agência de reserva de viagens/estadias que tem como funcionalidades: buscar por preços/hotéis/datas, fazer a sua reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída. Contém também o sistema de pagamento com a integração do stripe, sendo assim um método de pagamento seguro e funcionando com qualquer cartão de crédito (porém por estar no test mode vc tem que usar o cartão de teste que o seguinte: 4242 4242 4242 4242).
+
 ## Link do deploy:
 
 https://fsw-trips-leonardoalves04.vercel.app
