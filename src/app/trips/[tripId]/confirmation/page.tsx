@@ -74,9 +74,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
 
     const { sessionId } = await res.json();
 
-    const stripe = await loadStripe(
-      process.env.NEXT_PUBLIC_STRIPE_KEY as string
-    );
+    const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY as string);
 
     await stripe?.redirectToCheckout({ sessionId });
 
