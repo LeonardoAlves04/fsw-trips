@@ -12,6 +12,8 @@ export async function POST(request: Request) {
 
   const req = await request.json();
 
+  console.log(req)
+
   const { tripId, totalPrice, name, description, coverImage, startDate, endDate, guests } = req
 
   const session = await stripe.checkout.sessions.create({
@@ -40,6 +42,8 @@ export async function POST(request: Request) {
     ],
     mode: "payment",
   });
+
+  console.log(totalPrice)
 
   return new NextResponse(JSON.stringify({ sessionId: session.id }), { status: 200 });
 }

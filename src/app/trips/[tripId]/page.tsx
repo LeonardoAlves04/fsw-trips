@@ -1,10 +1,10 @@
 import { prisma } from "@/lib/prisma";
+
 import React from "react";
-import ReactCountryFlag from "react-country-flag";
 import TripHeader from "./components/TripHeader";
 import TripReservation from "./components/TripReservation";
 import TripDescription from "./components/TripDescription";
-import TripsHighlights from "./components/TripHighlights";
+import TripHighlights from "./components/TripHighlights";
 import TripLocation from "./components/TripLocation";
 
 const getTripDetails = async (tripId: string) => {
@@ -35,15 +35,13 @@ const TripDetails = async ({ params }: { params: { tripId: string } }) => {
             maxGuests={trip.maxGuests}
           />
         </div>
+
         <div className="lg:order-1">
           <TripDescription description={trip.description} />
-          <TripsHighlights highlights={trip.highlights} />
+          <TripHighlights highlights={trip.highlights} />
         </div>
       </div>
-      <TripLocation
-        locationDescription={trip.locationDescription}
-        location={trip.location}
-      />
+      <TripLocation locationDescription={trip.locationDescription} location={trip.location} />
     </div>
   );
 };

@@ -163,9 +163,7 @@ const TripReservation = ({
       <div className="flex justify-between mt-3">
         <p className="font-medium text-sm text-primaryDarker">Total:</p>
         <p className="font-medium text-sm text-primaryDarker">
-          {startDate && endDate
-            ? `R$ ${differenceInDays(endDate, startDate) * pricePerDay}` ?? 1
-            : "R$0"}
+          {startDate && endDate ? `R$ ${differenceInDays(endDate, startDate) * pricePerDay}` ?? 1 : "R$0"}
         </p>
       </div>
       <div className="pb-10 border-b border-b-grayLighter w-full lg:border-none lg:pb-0">
