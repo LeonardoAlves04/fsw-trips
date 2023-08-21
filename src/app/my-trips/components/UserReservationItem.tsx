@@ -24,7 +24,7 @@ const UserReservationItem = ({
   const { trip } = reservation;
 
   const handleDeleteClick = async () => {
-    const res = await fetch(`api/trips/reservation/${reservation.id}`, {
+    const res = await fetch(`/api/trips/reservation/${reservation.id}`, {
       method: "DELETE",
     });
 
