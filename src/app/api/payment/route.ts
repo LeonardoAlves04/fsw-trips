@@ -12,7 +12,7 @@ export async function POST(request: Request) {
 
   const req = await request.json();
 
-  const { tripId, totalPrice, name, description, coverImage, startDate, endDate, guests } = req;
+  const { tripId, totalPrice, name, description, coverImage, startDate, endDate, guests } = req
 
   const session = await stripe.checkout.sessions.create({
     success_url: process.env.HOST_URL!,

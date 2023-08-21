@@ -31,11 +31,13 @@ const UserReservationItem = ({
     if (!res.ok) {
       return toast.error("Ocorreu um erro ao cancelar a sua reserva", {
         position: "bottom-center",
+        draggable: false
       });
     }
 
     toast.success("Reserva cancelada com sucesso!", {
       position: "bottom-center",
+      draggable: false
     });
 
     fetchReservations();

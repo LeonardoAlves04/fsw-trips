@@ -69,6 +69,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
     if (!res.ok) {
       return toast.error("Ocorreu um erro ao realizar a reserva!", {
         position: "bottom-center",
+        draggable: false
       });
     }
 
@@ -80,6 +81,7 @@ const TripConfirmation = ({ params }: { params: { tripId: string } }) => {
 
     toast.success("Reserva realizada com sucesso!", {
       position: "bottom-center",
+      draggable: false
     });
   };
 
