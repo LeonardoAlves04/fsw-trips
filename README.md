@@ -1,4 +1,4 @@
-## Agência de reserva de viagens 
+## Ecommerce de periféricos e produtos relacionados a computadores.
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=next&message=framework&color=blue&style=for-the-badge&logo=Next"/>
@@ -22,7 +22,7 @@
 ## Descrição do projeto 📝
 
 <p align="justify">
-  Um projeto de agência de reserva de viagens que tem como objetivo fazê-las de forma fácil e rápída, por buscar por preços/hotéis/datas, fazer a reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída, contém também o sistema de pagamento real com a integração do stripe (uma API de pagamento), e para testar vocÊ pode usar o cartão de teste, basta apenas preencher com: 4242 4242 4242 4242).
+  Um projeto de agência de reserva de viagens que tem como objetivo fazê-las de forma fácil e rápída, por buscar por preços/hotéis/datas, fazer a reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída, contém também o sistema de pagamento real com a integração do stripe (uma API de pagamento), e para testar você pode usar o cartão de teste, basta apenas preencher com: 4242 4242 4242 4242).
 </p>
 
 ## Funcionalidades 📦
