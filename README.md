@@ -1,6 +1,11 @@
-## Projeto de um website de uma agência de viagens(buscar destinos, olhar preços, fazer reservas, etc..) Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
+## Agência de reserva de viagens 
 
-Esse é um projeto de agência de reserva de viagens/estadias que tem como funcionalidades: buscar por preços/hotéis/datas, fazer a sua reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída. Contém também o sistema de pagamento com a integração do stripe, sendo assim um método de pagamento seguro e funcionando com qualquer cartão de crédito (porém por estar no test mode vc tem que usar o cartão de teste, que é o seguinte: 4242 4242 4242 4242).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=next&message=framework&color=blue&style=for-the-badge&logo=Next"/>
+  <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
+  <img src="http://img.shields.io/static/v1?label=Tailwindy&message=biblioteca&color=red&style=for-the-badge&logo=tailwind"/>
+  <img src="http://img.shields.io/static/v1?label=Prisma&message=ORM&color=red&style=for-the-badge&logo=Prisma"/>
+</p>
 
 ## Link do deploy:
 
