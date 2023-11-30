@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=next&message=framework&color=blue&style=for-the-badge&logo=Next"/>
   <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
-  <img src="http://img.shields.io/static/v1?label=Tailwindy&message=biblioteca&color=red&style=for-the-badge&logo=tailwind"/>
+  <img src="http://img.shields.io/static/v1?label=Tailwind&message=biblioteca&color=red&style=for-the-badge&logo=tailwind"/>
   <img src="http://img.shields.io/static/v1?label=Prisma&message=ORM&color=red&style=for-the-badge&logo=Prisma"/>
 </p>
 
