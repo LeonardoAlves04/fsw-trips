@@ -55,8 +55,6 @@ Para fazer as reservas você necessita de fazer o login com sua conta google, ca
 
 - Prisma: Um ORM (Object-Relational Mapping) para Node.js e TypeScript.
 
-- shadcn/ui: Uma biblioteca de componentes de IU reutilizáveis e estilizáveis.
-
 - Tailwind CSS: Um framework CSS que oferece várias classes para utilização já pré-estilizadas.
 
 - API do Stripe: Uma API de pagamento popular para processar pagamentos online de forma segura.
