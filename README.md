@@ -59,7 +59,6 @@ Para fazer as reservas você necessita de fazer o login com sua conta google, ca
 
 ## Imagens do projeto (Desktop e Mobile):
 
-•Página inicial: 
 ![Captura de Tela (304)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/6a586bba-62f7-497a-bb5f-593b529c4f5a)
 ![Captura de Tela (306)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/9e5176d7-3599-4f55-a9b3-66a9cb840aca)
 ![Captura de Tela (310)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/785083df-be2b-4c56-943c-61739a710127)
