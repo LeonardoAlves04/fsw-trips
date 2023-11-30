@@ -33,6 +33,8 @@
 
 :heavy_check_mark: Pagamento do Pedido com a API do Stripe: Oferecemos uma experiência segura de pagamento online com a integração da API do Stripe, incluindo o uso de webhooks para processar eventos relacionados ao pagamento. Os usuários podem concluir seus pedidos com facilidade e segurança.
 
+:heavy_check_mark: Mobile first :D
+
 ## Deploy da Aplicação :dash:
 
 Deploy: https://fsw-trips-leonardoalves04.vercel.app
@@ -57,7 +59,7 @@ Para fazer as reservas você necessita de fazer o login com sua conta google, ca
 
 - API do Stripe: Uma API de pagamento popular para processar pagamentos online de forma segura.
 
-## Imagens do projeto (Desktop e Mobile):
+## Imagens do projeto:
 
 ![Captura de Tela (304)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/6a586bba-62f7-497a-bb5f-593b529c4f5a)
 ![Captura de Tela (306)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/9e5176d7-3599-4f55-a9b3-66a9cb840aca)
