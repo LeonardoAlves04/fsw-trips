@@ -33,11 +33,11 @@
 
 :heavy_check_mark: Pagamento do Pedido com a API do Stripe: Oferecemos uma experiência segura de pagamento online com a integração da API do Stripe, incluindo o uso de webhooks para processar eventos relacionados ao pagamento. Os usuários podem concluir seus pedidos com facilidade e segurança.
 
-## Layout ou Deploy da Aplicação :dash:
+## Deploy da Aplicação :dash:
 
 Deploy: https://fsw-trips-leonardoalves04.vercel.app
 
-## Casos de Uso
+## Casos de Uso :warning:
 
 Para fazer as reservas você necessita de fazer o login com sua conta google, caso contrário você será redirecionado para tela inicial e não conseguirá realizar nenyuma reserva, apenas navegar pelas estadias disponíveis.
 
