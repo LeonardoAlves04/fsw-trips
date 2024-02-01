@@ -41,7 +41,7 @@ Deploy: https://fsw-trips-leonardoalves04.vercel.app
 
 ## Casos de Uso :warning:
 
-Para fazer as reservas você necessita de fazer o login com sua conta google, caso contrário você será redirecionado para tela inicial e não conseguirá realizar nenyuma reserva, apenas navegar pelas estadias disponíveis.
+Para fazer as reservas você necessita de fazer o login com sua conta google, caso contrário você será redirecionado para tela inicial e não conseguirá realizar nenhuma reserva, apenas navegar pelas estadias disponíveis.
 
 ## Linguagens e libs utilizadas :books:
 
