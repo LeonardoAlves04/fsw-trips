@@ -22,7 +22,7 @@
 ## Descrição do projeto 📝
 
 <p align="justify">
-  Um projeto de agência de reserva de viagens que tem como objetivo fazê-las de forma fácil e rápída, por buscar por preços/hotéis/datas, fazer a reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída, contém também o sistema de pagamento real com a integração do stripe (uma API de pagamento), e para testar você pode usar o cartão de teste, basta apenas preencher com: 4242 4242 4242 4242).
+  ⚠️VOCÊ DEVE ESTAR LOGADO NO GOOGLE PARA CONSEGUIR FAZER RESRVAS⚠️ Um projeto de agência de reserva de viagens que tem como objetivo fazê-las de forma fácil e rápída, por buscar por preços/hotéis/datas, fazer a reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída, contém também o sistema de pagamento real com a integração do stripe (uma API de pagamento), e para testar você pode usar o cartão de teste, basta apenas preencher com: 4242 4242 4242 4242).
 </p>
 
 ## Funcionalidades 📦
