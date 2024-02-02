@@ -1,34 +1,67 @@
-## Projeto de um website de uma agêcia de viagens(buscar destinos, olhar preçoes, fazer reservas, etc..) Tecnologias utilizadas: NextJs,Typescript,Prisma,Tailwimd entre outras.
+## Agência de reserva de estadias
 
-Esse é um projeto de agência de reserva de viagens/estadias que tem como funcionalidades: buscar por preços/hotéis/datas, fazer a sua reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída. Contém também o sistema de pagamento com a integração do stripe, sendo assim um método de pagamento seguro e funcionando com qualquer cartão de crédito (porém por estar no test mode vc tem que usar o cartão de teste, que é o seguinte: 4242 4242 4242 4242).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=next&message=framework&color=blue&style=for-the-badge&logo=Next"/>
+  <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
+  <img src="http://img.shields.io/static/v1?label=Tailwind&message=biblioteca&color=red&style=for-the-badge&logo=tailwind"/>
+  <img src="http://img.shields.io/static/v1?label=Prisma&message=ORM&color=red&style=for-the-badge&logo=Prisma"/>
+</p>
 
-## Link do deploy:
+> Status do Projeto: :heavy_check_mark: Concluído!
 
-https://fsw-trips-leonardoalves04.vercel.app
+### Tópicos 🔹
 
-## Imagens do projeto (Desktop e Mobile):
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-•Página inicial: 
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
+
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+
+:small_blue_diamond: [Casos de Uso](#casos-de-uso-warning)
+
+## Descrição do projeto 📝
+
+<p align="justify">
+  ⚠️VOCÊ DEVE ESTAR LOGADO NO GOOGLE PARA CONSEGUIR FAZER RESRVAS⚠️ Um projeto de agência de reserva de viagens que tem como objetivo fazê-las de forma fácil e rápída, por buscar por preços/hotéis/datas, fazer a reserva e se preciso cancelar ela. Você pode fazer um orçamento apenas colocando a data desejada de chegada e saída, contém também o sistema de pagamento real com a integração do stripe (uma API de pagamento), e para testar você pode usar o cartão de teste, basta apenas preencher com: 4242 4242 4242 4242).
+</p>
+
+## Funcionalidades 📦
+
+:heavy_check_mark: Login com o Google: Permitimos que os usuários façam login usando suas contas do Google para uma experiência de autenticação simplificada.
+
+:heavy_check_mark: Facilidade nas reservas: Basta estar logado e autenticado com o Google e selecionar um local e data desejado e pronto, você será redirecionado para tela de pagamento e pronto :D
+
+:heavy_check_mark: Pagamento do Pedido com a API do Stripe: Oferecemos uma experiência segura de pagamento online com a integração da API do Stripe, incluindo o uso de webhooks para processar eventos relacionados ao pagamento. Os usuários podem concluir seus pedidos com facilidade e segurança.
+
+:heavy_check_mark: Mobile first :D
+
+## Deploy da Aplicação :dash:
+
+Deploy: https://fsw-trips-leonardoalves04.vercel.app
+
+## Casos de Uso :warning:
+
+Para fazer as reservas você necessita de fazer o login com sua conta google, caso contrário você será redirecionado para tela inicial e não conseguirá realizar nenhuma reserva, apenas navegar pelas estadias disponíveis.
+
+## Linguagens e libs utilizadas :books:
+
+- React: Uma biblioteca JavaScript popular para construir interfaces de usuário interativas.
+
+- Next.js 13: Um framework React que oferece renderização do lado do servidor (SSR), geração estática (SSG), entre muitos outros recursos.
+
+- Next Auth: Biblioteca para autenticação de usuários com OAuth.
+
+- Postgres: Um sistema de gerenciamento de banco de dados relacional.
+
+- Prisma: Um ORM (Object-Relational Mapping) para Node.js e TypeScript.
+
+- Tailwind CSS: Um framework CSS que oferece várias classes para utilização já pré-estilizadas.
+
+- API do Stripe: Uma API de pagamento popular para processar pagamentos online de forma segura.
+
+## Imagens do projeto:
+
 ![Captura de Tela (304)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/6a586bba-62f7-497a-bb5f-593b529c4f5a)
-![Captura de Tela (305)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/6aa2ceb8-4af6-48d6-8f79-475a7d2694c8)
-![Captura de Tela (312)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/87b28b98-16af-47ed-bc41-016c36495636)
-
-•Página da viagem: 
 ![Captura de Tela (306)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/9e5176d7-3599-4f55-a9b3-66a9cb840aca)
-![Captura de Tela (307)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/2b61e04b-f723-4fa8-9c99-9a30bdd37820)
-![Captura de Tela (313)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/9bc07fb0-b342-40b8-b142-316ec0a9326f)
-![Captura de Tela (314)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/7b540e69-b588-4934-84c4-762cd44ebf30)
-
-•Filtrando viagens: 
-![Captura de Tela (308)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/b9841aca-7566-4e15-a53a-a5d04c6757a8)
-![Captura de Tela (315)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/b2f8b5a5-962c-4029-ae4a-acd9343d11b5)
-
-•Reservando e pagando:
 ![Captura de Tela (310)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/785083df-be2b-4c56-943c-61739a710127)
-![Captura de Tela (311)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/4c41fc7f-c559-4de9-b1e1-dafa6565a0eb)
-![Captura de Tela (316)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/e6c94a43-6054-4e33-af24-9df705d1abc7)
-![Captura de Tela (317)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/68c4a2db-43a4-433b-a10e-f886d4b0c53e)
-
-•Página das suas reservas:
 ![Captura de Tela (309)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/30b1aac1-5883-4dd4-9e9a-cba3efd37df9)
-![Captura de Tela (318)](https://github.com/LeonardoAlves04/fsw-trips/assets/69488943/b668e86d-5917-4c66-8473-650fd6165e8e)
