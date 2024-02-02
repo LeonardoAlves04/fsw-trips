@@ -12,7 +12,16 @@ export async function POST(request: Request) {
 
   const req = await request.json();
 
-  const { tripId, totalPrice, name, description, coverImage, startDate, endDate, guests } = req
+  const {
+    tripId,
+    totalPrice,
+    name,
+    description,
+    coverImage,
+    startDate,
+    endDate,
+    guests,
+  } = req;
 
   const session = await stripe.checkout.sessions.create({
     success_url: process.env.HOST_URL!,
@@ -41,7 +50,7 @@ export async function POST(request: Request) {
     mode: "payment",
   });
 
-  console.log(totalPrice)
-
-  return new NextResponse(JSON.stringify({ sessionId: session.id }), { status: 200 });
+  return new NextResponse(JSON.stringify({ sessionId: session.id }), {
+    status: 200,
+  });
 }
