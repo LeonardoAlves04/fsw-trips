@@ -11,8 +11,8 @@ const Header = () => {
 
   const { status, data } = useSession();
 
-  const handleLoginClick = () => async () => {
-    await signIn();
+  const handleLoginClick = () => {
+    signIn();
   };
 
   const handleLogoutClick = () => {
