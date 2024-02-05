@@ -11,7 +11,9 @@ const Header = () => {
 
   const { status, data } = useSession();
 
-  const handleLoginClick = () => signIn();
+  const handleLoginClick = () => async () => {
+    await signIn();
+  };
 
   const handleLogoutClick = () => {
     setMenuIsOpen(false);
